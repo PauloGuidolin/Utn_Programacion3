@@ -1,102 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tp html</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <ol>
-        <h1>
-            <li>Estructura Basica Html</li>
-        </h1>
-        <p>Este documento tiene estructura basica de html</p>
-        <h2>
-            <li>Encabezados y propiedades de texto</li>
-        </h2>
-        <p><b>Este es un texto en negrita</b></p>
-        <p><i>Esto es un texto en cursiva</i></p>
-        <p><u>Esto es un texto subrayado</u></p>
-        <h2>
-            <li>Divisiones y Agrupacion de COntenido</li>
-        </h2>
-        <div>
-            <h3>Seccion 1</h3>
-            <p>Contenido de la primera seccion agrupada en un div</p>
+    <!-- Header -->
+    <header class="header">
+        <h1>Trabajo Practico de CSS</h1>
+    </header>
+    <!-- PROPIEDADES DE TEXTO EN CSS -->
+    <div class="divs">
+        <h2 class="h2">Propiedades de Texto en CSS</h2>
+        <P class="pprimerdiv">Este parrafo Muestra La Aplicacion De Diferentes Propiedades De Texto En CSS, como
+            Alineacion, Transformacion De Texto y Decoraciones.</P>
+        <p class="p2primerdiv">"El buen diseño es obvio. El gran diseño es transparente".--Joe Sparano</p>
+    </div>
+    <!-- PROPIEDADES DE CAJA EN CSS -->
+    <div class="divs">
+        <h2 class="h2">Propiedades de Caja en CSS</h2>
+        <p class="primercaja">Esta es una caja con propiedades de padding,margin,border y box-shadow, lo que le da un
+            efecto tridimensional </p>
+        <p class="segundacaja">Caja destacada con un borde mas grueso y un fondo diferente </p>
+    </div>
+    <!-- POSICION RELATIVA Y ABSOLUTA EN CSS -->
+    <div class="divs position">
+        <h2 class="h2">Posicion relativa y absoluta en css</h2>
+        <div class="firstbox">
+            <p>Esta caja tiene una posicion realtiva,lo que significa que se puede ajustar en relacion a su posicion
+                original</p>
+            <div class="secondbox">
+                <p>Esta caja tiene posicion absoluta dentro de la relativa</p>
+            </div>
         </div>
-        <div>
-            <h3>Seccion 2</h3>
-            <p>Contenido de la segunda seccion agrupada en un div</p>
+    </div>
+    <!-- PRINCIPIOS DE GRID -->
+    <div class="divs">
+        <h2 class="h2">Principios de Grid en Css</h2>
+        <div class="grid-container">
+            <div class="grid-item">Elemento 1</div>
+            <div class="grid-item">Elemento 2</div>
+            <div class="grid-item">Elemento 3</div>
+            <div class="grid-item">Elemento 4</div>
         </div>
-        <h2>
-            <li>Enlaces y Listas</li>
-        </h2>
-        <h4>Visita nuestro <a href="">Sitio web</a> para mas informacion</h4>
-        <p>Enlaces internos:</p>
-        <ul>
-            <li><a href="">Ir a estructura</a></li>
-            <li><a href="">Ir a multimedia</a></li>
-            <li><a href="">Ir a formulario</a></li>
-        </ul>
-        <p>Lista desordenada</p>
-        <ul>
-            <li>Primer item de una lista desordenada</li>
-            <li>Segundo item de una lista desordenada</li>
-        </ul>
-        <p>Lista ordenada:</p>
-        <ol>
-            <li>Primer item de la lista ordenada</li>
-            <li>Segundo item de la lista ordenada</li>
-        </ol>
-        <h2>
-            <li>Elementos multimedia</li>
-        </h2>
-        <table>
-            <tr>
-                <td>
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-                </td>
-                <td>
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-                </td>
-                <td>
-                    <audio controls>
-                        <source src="ruta_del_audio.mp3" type="audio/mpeg">
-                        Tu navegador no soporta la etiqueta de audio.
-                    </audio>
-                </td>
-            </tr>
-        </table>
-        <h2><li>Tablas</li></h2>
-        <table>
-            <table border="1">
-                <tr>
-                    <td>Columna 1</td>
-                    <td>Columna 2</td>
-                </tr>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                </tr>
-                <tr>
-                    <td>Dato 3</td>
-                    <td>Dato 4</td>
-                </tr>
-            </table>
-        </table>
-        <h2><li>Formulario</li></h2>
-        <form action="">
-            <label for="nombre">nombre</label>
-            <input type="text" id="nombre" name="nombre">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="mensaje">Mensaje</label>
-            <input type="text">
-            <button type="submit">Enviar</button>
-        </form>
-    </ol>
+    </div>
+    <!-- ANIMACION -->
+    <section class="divs">
+        <div class="animacion"></div>
+        <div class="mover"></div>
+    </section>
+
 </body>
 
 </html>

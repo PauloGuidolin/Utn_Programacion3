@@ -1,41 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-#h1Header{
-    color: white;
-    background-color: dimgrey;
-    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    padding: 10px;
 }
-.h2primerdiv{
+
+.divs{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Header */
+.header {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* todos los h2 del texto */
+.h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 15px;
     margin: 10px;
     border-bottom: 5px solid gray;
 }
-.pprimerdiv{
+
+.pprimerdiv {
     text-decoration: underline;
     padding: 20px;
 }
-.p2primerdiv{
+
+.p2primerdiv {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: floralwhite;
-padding: 20px;
-margin: 10px;
-border-left: 10px solid gray;
+    background-color: floralwhite;
+    padding: 20px;
+    margin: 10px;
+    border-left: 10px solid gray;
 }
-.primercaja{
+
+.primercaja {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
     border: 2px solid black;
-    box-shadow: 0 10px 10px -5px gray ;
+    box-shadow: 0 10px 10px -5px gray;
 }
-.segundacaja{
+
+.segundacaja {
     background-color: bisque;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 20px;
@@ -44,13 +57,15 @@ border-left: 10px solid gray;
     border: 4px solid black;
     box-shadow: 0 20px 20px 0 gray;
 }
-.firstbox{
+
+.firstbox {
     margin: 10px;
     padding: 30px;
     background-color: lightblue;
     position: relative;
 }
-.secondbox{
+
+.secondbox {
     padding: 20px;
     margin: 10px;
     background-color: aqua;
@@ -59,10 +74,16 @@ border-left: 10px solid gray;
     top: 50%;
     left: 70%;
 }
+.position{
+    padding-bottom: 20px;
+    height: 250px;
+}
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Dos columnas de igual ancho */
-    gap: 10px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(4, 1fr);
+    /* Dos columnas de igual ancho */
+    gap: 10px;
+    /* Espacio entre los elementos */
     padding: 10px;
     background-color: #f0f0f0;
 }
@@ -101,27 +122,36 @@ border-left: 10px solid gray;
     0% {
         left: 0;
     }
+
     50% {
         left: 50%;
     }
+
     100% {
         left: 0;
     }
 }
 
+/* mediaqueries */
 @media (max-width: 768px) {
     body {
-        background-color: #f0f0f0; /* Cambia el color de fondo */
+        background-color: #ddbce4;
+        /* Cambia el color de fondo */
     }
 
     #h1Header {
-        font-size: 20px; /* Reduce el tamaño de la fuente del encabezado */
+        font-size: 20px;
+        /* Reduce el tamaño de la fuente del encabezado */
     }
-    h2{
+
+    h2 {
         font-size: 20px;
     }
+
     section {
-        width: 95%; /* Ajusta el ancho de la sección */
-        padding: 10px; /* Reduce el padding */
+        width: 95%;
+        /* Ajusta el ancho de la sección */
+        padding: 10px;
+        /* Reduce el padding */
     }
 }
