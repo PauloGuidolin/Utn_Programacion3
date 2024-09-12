@@ -5,3 +5,8 @@
 #formulario{
     margin-top: 50px;
 }
+#email-guardado{
+    padding: 10px;
+    background-color: lightsalmon;
+    border-radius: 20px;
+}

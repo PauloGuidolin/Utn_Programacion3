@@ -222,3 +222,5 @@ eliminar.addEventListener("click", function () {
     localStorage.removeItem("userEmail"); //remueve el correo guardado
     correo.textContent = ""; 
 });
+
+
