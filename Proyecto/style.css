@@ -1,0 +1,12 @@
+.container{
+    height: 200px;
+    background-color: lightblue;
+    position: relative;
+}
+.circle{
+    position: absolute;
+    background: linear-gradient(to left, yellow,pink);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
