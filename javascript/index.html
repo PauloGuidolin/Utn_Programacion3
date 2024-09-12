@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,11 +24,28 @@
     </div>
 
     <ul>
-        <li id="li1" type="submit"><button type="submit" id="pepe">Elemento 1</button></li>
+        <li id="li1">Elemento1</li>
         <li id="li2">Elemento2</li>
         <li id="li3">Elemento3</li>
         <li id="li4">Elemento4</li>
     </ul>
+
+    <div class="ejercicio2">
+        <h3>Ejercicio 2: campo de texto y botones</h3>
+        <div class="inputs">
+            <input type="text" id="text1" placeholder="Ingresa un texto">
+            <button id="des">Deshabilitar Campo</button>
+            <button id="hab">Habilitar Campo</button>
+        </div>
+    </div>
+
+    <form action="" id="formulario">
+        <label for="mail">Correo Electronico</label>
+        <input type="email" id="mail">
+        <button type="submit" id="submit-correo">Guardar Correo</button>
+    </form>
+    <p id="email-guardado"></p>
+    <button type="button" id="eliminar">Eliminar Correo Guardado</button>
     <script src="main.js"></script>
 </body>
 </html>
