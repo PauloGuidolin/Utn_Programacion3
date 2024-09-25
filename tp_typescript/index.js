@@ -75,16 +75,14 @@ let cajaTexto = new caja();
 cajaTexto.setValor('Mensaje secreto');
 let cajaNumero = new caja();
 cajaNumero.setValor(42);
-document.write(`
-    <br> contenido de caja de texto: ${cajaTexto.getValor()}
-    <br> contenido de caja de numero: ${cajaNumero.getValor()}`);
+document.write(`<br> contenido de caja de texto: ${cajaTexto.getValor()}
+                <br> contenido de caja de numero: ${cajaNumero.getValor()}`);
 //ejercicio11
 function identidad(dato) {
     return dato;
 }
-document.write(`
-    <br> identidad de numero: ${identidad(123)}
-    <br> identidad del texto: ${identidad('texto')}`);
+document.write(`<br> identidad de numero: ${identidad(123)} 
+                <br> identidad del texto: ${identidad('texto')}`);
 //ejercicio12
 var color;
 (function (color) {
@@ -93,5 +91,4 @@ var color;
     color[color["amarillo"] = 2] = "amarillo";
 })(color || (color = {}));
 let variable = color[2];
-document.write(`
-    <br> color favorito: ${variable}`);
+document.write(`<br> color favorito: ${variable}`);
